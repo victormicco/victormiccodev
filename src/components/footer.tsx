@@ -2,7 +2,7 @@ import { Home, Linkedin, Github } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="fixed inset-x-0 bottom-0 p-4 border-t dark:border-gray-800 backdrop-blur-lg">
+    <footer className=" inset-x-0 bottom-0 p-4 border-t dark:border-gray-800 backdrop-blur-lg">
       <div className="container flex items-center justify-between gap-4 text-sm">
         <div className="flex items-center gap-4">
           <a href="#">

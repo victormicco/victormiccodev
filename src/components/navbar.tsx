@@ -8,14 +8,20 @@ export default function Navbar() {
         <SetThemeToggle />
       </Link>
       <nav className="hidden md:flex items-center space-x-4 flex-1">
-        <Link className="font-medium text-sm leading-none" href="#">
+        <Link
+          className="font-medium text-sm leading-none"
+          href="/src/app/(application)"
+        >
           Home
         </Link>
         <Link className="font-medium text-sm leading-none" href="#">
-          About
+          Experience
         </Link>
         <Link className="font-medium text-sm leading-none" href="#">
-          Services
+          Projects
+        </Link>
+        <Link className="font-medium text-sm leading-none" href="#">
+          Education
         </Link>
         <Link className="font-medium text-sm leading-none" href="#">
           Contact
