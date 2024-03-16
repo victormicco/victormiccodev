@@ -1,9 +1,28 @@
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 export default function Experience() {
+  const { ref, inView } = useInView();
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setAnimate(true);
+    }
+  }, [inView]);
+
   return (
     <div className="w-full flex justify-center h-[1000px] mb-16">
-      <div className="  rounded-lg border dark:border-gray-700 overflow-hidden w-2/3 p-8">
+      <div
+        ref={ref}
+        className={`rounded-lg border dark:border-gray-700 overflow-hidden w-2/3 p-8`}
+        style={{
+          transition: "opacity 3s ease",
+          opacity: animate ? 1 : 0,
+        }}
+      >
         <h1 className="text-4xl sm:text-5xl font-bold text-foreground p-6">
           Experience
         </h1>
