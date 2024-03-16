@@ -7,6 +7,7 @@ import Footer from "../../components/footer";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
 import { motion } from "framer-motion";
+import EducationSection from "./components/education";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <Experience />
       <Projects />
+      <EducationSection />
       <Footer />
     </>
   );

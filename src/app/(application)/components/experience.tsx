@@ -24,7 +24,7 @@ export default function Experience() {
         }}
       >
         <h1 className="text-4xl sm:text-5xl font-bold text-foreground p-6">
-          Experience
+          Experience🧑‍💻
         </h1>
         <div className="h-full w-full relative overflow-y-auto">
           <div className="grid gap-4 p-6">

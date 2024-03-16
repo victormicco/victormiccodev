@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <div className="w-full flex justify-center p-10">
       <div className="max-w-3xl">
-        <h1 className="text-4xl font-bold p-4">Projects</h1>
+        <h1 className="text-4xl font-bold p-4 text-center">Projects</h1>
         <Carousel>
           <CarouselContent className="mx-2">
             <CarouselItem>
@@ -36,7 +36,7 @@ export default function Projects() {
                   <CardContent className="p-4">
                     <div className="flex justify-center">
                       <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0">
-                        <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary" />
+                        <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary animate-ping" />
                         <div className="space-y-1 flex flex-col gap-y-2">
                           <p className="text-sm font-medium leading-none">
                             Killuicon
@@ -78,7 +78,7 @@ export default function Projects() {
                   <CardContent className="p-4">
                     <div className="flex justify-center">
                       <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0">
-                        <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary" />
+                        <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary animate-ping" />
                         <div className="space-y-1 flex flex-col gap-y-2">
                           <p className="text-sm font-medium leading-none">
                             Killuicon
@@ -120,9 +120,9 @@ export default function Projects() {
                   <CardContent className="p-4">
                     <div className="flex justify-center">
                       <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0">
-                        <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary" />
+                        <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary animate-ping" />
                         <div className="space-y-1 flex flex-col gap-y-2">
-                          <p className="text-sm font-medium leading-none">
+                          <p className="text-sm font-medium leading-none ">
                             Killuicon
                           </p>
                           <p className="text-sm text-muted-foreground">

@@ -7,13 +7,9 @@ export default function Navbar() {
   return (
     <motion.div
       className="box"
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0, scale: 1 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.0],
-      }}
+      transition={{ opacity: { duration: 0.8 }, scale: { duration: 0.8 } }}
     >
       <nav className="flex h-14 w-full items-center px-4 md:px-6">
         <Link className="flex mr-6" href="#">

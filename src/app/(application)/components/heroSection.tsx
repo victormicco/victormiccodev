@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { ChevronsDown } from "lucide-react";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -29,7 +30,7 @@ export default function HeroSection() {
               <span className="underline decoration-wavy decoration-primary decoration-from-font underline-offset-4">
                 yourself
               </span>{" "}
-              know me
+              know me👋
             </h1>
             <p className="mt-4 text-xl sm:text-3xl text-primary">
               Hello, I&apos;m Victor! A passionate developer with 3+ years of
@@ -44,10 +45,13 @@ export default function HeroSection() {
               </ul>
             </div>
 
-            <div className="mt-32">
-              <Button className="" variant={"default"}>
+            <div className="mt-32 flex flex-col gap-20 justify-center items-center">
+              <Button className="w-28" variant={"outline"}>
                 Get in touch
               </Button>
+              <span className="content-center items-center">
+                <ChevronsDown className="h-20 w-20 animate-bounce" />
+              </span>
             </div>
           </div>
         </div>
