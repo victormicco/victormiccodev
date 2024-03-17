@@ -47,7 +47,7 @@ export default function HeroSection() {
               experience in:
             </p>
             <div className="flex justify-center">
-              <ul className="mt-4 text-xl sm:text-3xl text-primary flex flex-row justify-between w-2/3 ">
+              <ul className="mt-4 text-xl sm:text-3xl text-primary flex flex-row justify-between w-3/3 gap-x-6 ">
                 <li className="text-foreground font-bold">React</li>
                 <li className="text-primary font-bold">Typescript</li>
                 <li className="text-foreground font-bold">NextJS</li>
@@ -55,14 +55,14 @@ export default function HeroSection() {
               </ul>
             </div>
 
-            <div className="mt-32 flex flex-col gap-20 justify-center items-center">
+            <div className="mt-32 flex flex-col gap-20 justify-center items-center ">
               <Dialog>
                 <DialogTrigger asChild>
                   <Button className="w-28" variant={"outline"}>
                     About me
                   </Button>
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="w-2/3 flex justify-center ">
                   {" "}
                   <DialogHeader>
                     <DialogTitle>About myself</DialogTitle>
