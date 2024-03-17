@@ -12,7 +12,7 @@ import { Button } from "../../../components/ui/button";
 
 export default function Projects() {
   return (
-    <div className="w-full flex justify-center p-10">
+    <div className="w-full flex justify-center p-10" id="projects">
       <div className="max-w-3xl">
         <h1 className="text-4xl font-bold p-4 text-center">Projects</h1>
         <Carousel>

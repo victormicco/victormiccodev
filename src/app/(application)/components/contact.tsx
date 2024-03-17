@@ -9,7 +9,7 @@ import {
 
 export default function ContactMe() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center" id="contact">
       <Card className=" w-1/3 m-8">
         <CardHeader>
           <div>Contact me</div>

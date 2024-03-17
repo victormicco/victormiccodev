@@ -12,7 +12,7 @@ import {
 export default function EducationSection() {
   return (
     <>
-      <section className="w-full py-12">
+      <section className="w-full py-12 " id="education">
         <div className="container grid items-center gap-8 px-4 text-center md:gap-16 md:px-6">
           <div>
             <h3 className="text-lg font-semibold tracking-wider md:text-base sh-3.5">

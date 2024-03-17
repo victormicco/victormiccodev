@@ -14,7 +14,10 @@ export default function Experience() {
   }, [inView]);
 
   return (
-    <div className="w-full flex justify-center h-[1000px] mb-16">
+    <div
+      className="w-full flex justify-center h-[1000px] mb-16"
+      id="experience"
+    >
       <div
         ref={ref}
         className={`rounded-lg border dark:border-gray-700 overflow-hidden w-2/3 p-8`}

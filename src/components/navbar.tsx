@@ -22,16 +22,16 @@ export default function Navbar() {
           >
             Home
           </Link>
-          <Link className="font-medium text-sm leading-none" href="#">
+          <Link className="font-medium text-sm leading-none" href="#experience">
             Experience
           </Link>
-          <Link className="font-medium text-sm leading-none" href="#">
+          <Link className="font-medium text-sm leading-none" href="#projects">
             Projects
           </Link>
-          <Link className="font-medium text-sm leading-none" href="#">
+          <Link className="font-medium text-sm leading-none" href="#education">
             Education
           </Link>
-          <Link className="font-medium text-sm leading-none" href="#">
+          <Link className="font-medium text-sm leading-none" href="#contact">
             Contact
           </Link>
         </nav>
