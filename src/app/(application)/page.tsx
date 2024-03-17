@@ -1,13 +1,14 @@
 "use client";
-import Image from "next/image";
-import { Button } from "../../components/ui/button";
+
 import Navbar from "../../components/navbar";
 import HeroSection from "./components/heroSection";
 import Footer from "../../components/footer";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
-import { motion } from "framer-motion";
+
 import EducationSection from "./components/education";
+
+import ContactMe from "./components/contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <EducationSection />
+      <ContactMe />
       <Footer />
     </>
   );

@@ -64,10 +64,10 @@ export default function Projects() {
                 <Card>
                   <div className="aspect-16/9 rounded-lg overflow-hidden">
                     <Image
-                      alt="Killuicon"
+                      alt="NGO C.A.C.V"
                       className="object-cover w-full h-full"
                       height={270}
-                      src="https://i.ibb.co/Xj5k31m/killuicon.png"
+                      src="https://i.ibb.co/bv0dqWC/Screenshot-2024-03-17-172808.png"
                       style={{
                         aspectRatio: "480/270",
                         objectFit: "cover",
@@ -81,15 +81,15 @@ export default function Projects() {
                         <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary animate-ping" />
                         <div className="space-y-1 flex flex-col gap-y-2">
                           <p className="text-sm font-medium leading-none">
-                            Killuicon
+                            NGO C.A.C.V
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            A project to find any icon you need.
+                            A project to help a local NGO.
                           </p>
                           <Button
                             className="w-28  "
                             onClick={() =>
-                              window.open("https://killuicon.vercel.app")
+                              window.open("https://github.com/victormicco/cacv")
                             }
                           >
                             Check it out
@@ -106,10 +106,10 @@ export default function Projects() {
                 <Card>
                   <div className="aspect-16/9 rounded-lg overflow-hidden">
                     <Image
-                      alt="Killuicon"
+                      alt="Encontrei"
                       className="object-cover w-full h-full"
                       height={270}
-                      src="https://i.ibb.co/Xj5k31m/killuicon.png"
+                      src="https://i.ibb.co/s2zX4yT/Screenshot-2024-03-17-173232.png"
                       style={{
                         aspectRatio: "480/270",
                         objectFit: "cover",
@@ -123,15 +123,17 @@ export default function Projects() {
                         <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary animate-ping" />
                         <div className="space-y-1 flex flex-col gap-y-2">
                           <p className="text-sm font-medium leading-none ">
-                            Killuicon
+                            Encontrei
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            A project to find any icon you need.
+                            A multiplataform lost and found app
                           </p>
                           <Button
                             className="w-28  "
                             onClick={() =>
-                              window.open("https://killuicon.vercel.app")
+                              window.open(
+                                "https://github.com/fellipeutaka/encontrei"
+                              )
                             }
                           >
                             Check it out

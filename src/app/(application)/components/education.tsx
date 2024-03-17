@@ -11,107 +11,106 @@ import {
 
 export default function EducationSection() {
   return (
-    <main className="overflow-y-auto w-screen">
-      <div className="grid md:grid-cols-3 gap-4 md:gap-2 p-2">
-        <div className="bg-[#fafafa] rounded-lg p-2 flex flex-col content-center">
-          <div className="flex items-center space-x-2 p-2">
-            <div className="flex space-x-2 items-center">
-              <div className="w-8 h-8 rounded-full overflow-hidden">
-                <Image
-                  src="https://i.ibb.co/Xj5k31m/killuicon.png"
-                  alt="User"
-                  className="h-full w-full object-cover"
-                  height={32}
-                  style={{
-                    aspectRatio: "32/32",
-                    objectFit: "cover",
-                  }}
-                  width={32}
-                />
-              </div>
-              <div className="flex flex-col">
-                <Link className="font-semibold text-muted-foreground" href="#">
-                  victormicco
-                </Link>
-                <p className="text-xs text-foreground dark:text-background">
-                  Victor Micco
+    <>
+      <section className="w-full py-12">
+        <div className="container grid items-center gap-8 px-4 text-center md:gap-16 md:px-6">
+          <div>
+            <h3 className="text-lg font-semibold tracking-wider md:text-base sh-3.5">
+              What you think about know a bit about my
+            </h3>
+            <p className="mt-3 text-2xl font-extrabold leading-none md:text-3xl sh-2.5">
+              Education
+            </p>
+            <p className="mt-3 text-gray-500 md:mx-auto md:max-w-3xl md:text-base sh-2.25">
+              Let me show my past education and what I have learned from there.
+            </p>
+          </div>
+          <div className="grid max-w-sm gap-4 mx-auto md:gap-8 lg:max-w-none lg:grid-cols-2 xl:gap-12">
+            <div className="flex items-center gap-4">
+              <Image
+                alt="Service 1"
+                className="rounded-lg"
+                height="120"
+                src="https://www.sindcontsp.org.br/vantagens/wp-content/uploads/bfi_thumb/unicid-oevz7ll59b8gxszeilb7byl5040uh019akydsigwfs.png"
+                style={{
+                  aspectRatio: "120/120",
+                  objectFit: "cover",
+                }}
+                width="120"
+              />
+              <div>
+                <h4 className="text-xl font-semibold sh-1.5">
+                  Analysis and Systems Development
+                </h4>
+                <p className="text-sm text-gray-500 sh-2.25">
+                  UNICID | College | 2024 - 2027
                 </p>
               </div>
             </div>
-            <Button
-              className="ronuded-full ml-auto text-muted-foreground"
-              size="icon"
-              variant={"ghost"}
-            >
-              <MoreHorizontalIcon className="h-5 w-5" />
-              <span className="sr-only">More</span>
-            </Button>
-          </div>
-          <div className="grid gap-2">
-            <Image
-              alt="Post"
-              className="aspect-square object-cover w-96 rounded-t-lg ml-auto mr-auto"
-              height={120}
-              src={"https://i.ibb.co/Xj5k31m/killuicon.png"}
-              width={120}
-            />
-            <div className="p-2">
-              <div className="flex items-center space-x-4">
-                <div className="flex items-center space-x-2">
-                  <Button size={"icon"} variant={"ghost"}>
-                    <Heart className="h-6 w-6 text-primary" />
-                    <span className="sr-only text-background">Like</span>
-                  </Button>
-                  <Button size="icon" variant="ghost">
-                    <MessageCircleIcon className="h-6 w-6 text-foreground dark:text-background" />
-                    <span className="sr-only text-background">Comment</span>
-                  </Button>
-                  <Button size="icon" variant="ghost">
-                    <SendIcon className="h-6 w-6 text-foreground dark:text-background" />
-                    <span className="sr-only text-background">Send</span>
-                  </Button>
-                </div>
-                <Button className="ml-auto" size="sm" variant="outline">
-                  Follow
-                </Button>
+            <div className="flex items-center gap-4">
+              <Image
+                alt="Service 2"
+                className="rounded-lg"
+                height="120"
+                src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/08/etec-identidade.jpg"
+                style={{
+                  aspectRatio: "120/120",
+                  objectFit: "cover",
+                }}
+                width="120"
+              />
+              <div>
+                <h4 className="text-xl font-semibold sh-1.5">
+                  Software Development
+                </h4>
+                <p className="text-sm text-gray-500 sh-2.25">
+                  ETEC Parque Belém | Technical Course | 2020 - 2023
+                </p>
               </div>
-              <div className="space-y-2">
-                <div>
-                  <Link
-                    className="font-semibold text-foreground dark:text-background"
-                    href="#"
-                  >
-                    victormicco
-                  </Link>
-                  <span className="ml-4 text-foreground dark:text-background">
-                    Hey guys! Check out this amazing project right here.
-                  </span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 rounded-full overflow-hidden">
-                    <Image
-                      alt="User"
-                      className="w-full h-full object-cover"
-                      height={32}
-                      src={"https://i.ibb.co/Xj5k31m/killuicon.png"}
-                      style={{
-                        aspectRatio: "32/32",
-                        objectFit: "cover",
-                      }}
-                      width={32}
-                    />
-                  </div>
-                  <div className="border p-2 rounded-xl text-sm w-full">
-                    <p className="text-foreground dark:text-background">
-                      Wow! that incredible!
-                    </p>
-                  </div>
-                </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <Image
+                alt="Service 3"
+                className="rounded-lg"
+                height="120"
+                src="https://senai2024.pro.br/wp-content/uploads/2020/02/senai-sp.jpg"
+                style={{
+                  aspectRatio: "120/120",
+                  objectFit: "cover",
+                }}
+                width="120"
+              />
+              <div>
+                <h4 className="text-xl font-semibold sh-1.5">Mechatronics</h4>
+                <p className="text-sm text-gray-500 sh-2.25">
+                  SENAI Anchieta | Technical Course | Dropout
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <Image
+                alt="Service 4"
+                className="rounded-lg"
+                height="120"
+                src="https://gatewayit.com.br/wp-content/uploads/2022/01/mtitecnologia-computacao-em-nuvem-oracle.png"
+                style={{
+                  aspectRatio: "120/120",
+                  objectFit: "cover",
+                }}
+                width="120"
+              />
+              <div>
+                <h4 className="text-xl font-semibold sh-1.5">
+                  Bootcamp Oracle One
+                </h4>
+                <p className="text-sm text-gray-500 sh-2.25">
+                  Oracle - Alura - Ifood | Bootcamp | Present
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+    </>
   );
 }
