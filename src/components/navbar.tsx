@@ -16,10 +16,7 @@ export default function Navbar() {
           <SetThemeToggle />
         </Link>
         <nav className="hidden md:flex items-center space-x-4 flex-1">
-          <Link
-            className="font-medium text-sm leading-none"
-            href="/src/app/(application)"
-          >
+          <Link className="font-medium text-sm leading-none" href="#">
             Home
           </Link>
           <Link className="font-medium text-sm leading-none" href="#experience">

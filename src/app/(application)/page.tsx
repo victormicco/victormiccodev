@@ -12,7 +12,7 @@ import ContactMe from "./components/contact";
 
 export default function Home() {
   return (
-    <>
+    <div className="scroll-smooth">
       <Navbar />
       <HeroSection />
       <Experience />
@@ -20,6 +20,6 @@ export default function Home() {
       <EducationSection />
       <ContactMe />
       <Footer />
-    </>
+    </div>
   );
 }
