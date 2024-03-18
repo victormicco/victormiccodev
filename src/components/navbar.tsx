@@ -3,7 +3,12 @@ import Link from "next/link";
 import { SetThemeToggle } from "./setThemeToggle";
 import { motion } from "framer-motion";
 
+import { Toaster } from "./ui/sonner";
+import { Button } from "./ui/button";
+import { useToast } from "@/components/ui/use-toast";
+
 export default function Navbar() {
+  const { toast } = useToast();
   return (
     <motion.div
       className="box"
@@ -31,6 +36,19 @@ export default function Navbar() {
           <Link className="font-medium text-sm leading-none" href="#contact">
             Contact
           </Link>
+          <Button
+            className="font-medium text-sm leading-none"
+            onClick={() => {
+              toast({
+                variant: "default",
+                title: "Chill out🤗",
+                description:
+                  "This is just a portfolio, no need to buy anything!",
+              });
+            }}
+          >
+            Price
+          </Button>
         </nav>
       </nav>
     </motion.div>
