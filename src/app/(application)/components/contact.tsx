@@ -29,7 +29,7 @@ export default function ContactMe() {
           <div className="flex items-start space-x-4">
             <Linkedin className="h-4 w-4 mt-0.5" />
             <div className="text-sm font-medium">
-              <a href="https://linkedin/in/victormicco">victormicco</a>
+              <a href="https://linkedin.com/in/victormicco">victormicco</a>
             </div>
           </div>
         </CardContent>
