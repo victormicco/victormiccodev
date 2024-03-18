@@ -18,7 +18,7 @@ export default function ContactMe() {
         <CardContent className="grid gap-4">
           <div className="flex items-center space-x-4">
             <Phone className="h-4 w-4" />
-            <div className="text-sm font-medium">+55 (11) 99101-2250</div>
+            <div className="text-sm font-medium">+55 (11) 97885-3808</div>
           </div>
           <div className="flex items-center space-x-4">
             <MailboxIcon className="h-4 w-4" />
