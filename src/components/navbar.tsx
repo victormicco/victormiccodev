@@ -43,7 +43,7 @@ export default function Navbar() {
                 variant: "default",
                 title: "Chill out🤗",
                 description:
-                  "This is just a portfolio, no need to buy anything!",
+                  "This is just a portfolio, no need to buy anything...",
               });
             }}
           >
