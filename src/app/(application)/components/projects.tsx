@@ -22,6 +22,48 @@ export default function Projects() {
                 <Card>
                   <div className="aspect-16/9 rounded-lg overflow-hidden">
                     <Image
+                      alt="Midoriya"
+                      className="object-cover w-full h-full"
+                      height={270}
+                      src="https://i.ibb.co/10c6YKF/Screenshot-2024-04-14-143941.png"
+                      style={{
+                        aspectRatio: "480/270",
+                        objectFit: "cover",
+                      }}
+                      width={480}
+                    />
+                  </div>
+                  <CardContent className="p-4">
+                    <div className="flex justify-center">
+                      <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0">
+                        <span className="flex h-2 w-2 translate-y-1 rounded-full bg-primary animate-ping" />
+                        <div className="space-y-1 flex flex-col gap-y-2">
+                          <p className="text-sm font-medium leading-none">
+                            Midoriya
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            A Digital Marketing quiz website
+                          </p>
+                          <Button
+                            className="w-28  "
+                            onClick={() =>
+                              window.open("https://midoriya-pink.vercel.app/")
+                            }
+                          >
+                            Check it out
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="p-1">
+                <Card>
+                  <div className="aspect-16/9 rounded-lg overflow-hidden">
+                    <Image
                       alt="Killuicon"
                       className="object-cover w-full h-full"
                       height={270}
