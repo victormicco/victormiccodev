@@ -69,8 +69,8 @@ export default function HeroSection() {
                     <DialogDescription>
                       Feel free to know more about me
                     </DialogDescription>
-                    <div className="flex justify-end">
-                      <p>
+                    <div className="text-justify pt-4">
+                      <p className="flex gap-y-1">
                         My fascination with technology was ignited at a young
                         age, as I actively participated in an NGO in my
                         neighborhood since the tender age of 9. The foundation
@@ -90,7 +90,6 @@ export default function HeroSection() {
                       </p>
                     </div>
                   </DialogHeader>
-                  <div></div>
                 </DialogContent>
               </Dialog>
               <span className="content-center items-center">
