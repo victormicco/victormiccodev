@@ -2,6 +2,7 @@
 import React from "react";
 import { StickyScroll } from "../../../components/ui/sticky-scroll-reveal";
 import Image from "next/image";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const content = [
   {
@@ -73,11 +74,12 @@ const content = [
 ];
 export function Experience() {
   return (
-    <div className="flex justify-center flex-col items-center">
-      <h3 className="text-5xl font-bold">Experience🎈</h3>
-      <div className="p-10">
+    <>
+      <div className="flex justify-center flex-col items-center gap-y-4">
+        <h3 className="text-5xl font-bold">Experience🎈</h3>
+
         <StickyScroll content={content} />
       </div>
-    </div>
+    </>
   );
 }

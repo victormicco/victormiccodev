@@ -18,6 +18,11 @@ const nextConfig = {
       "images.unsplash.com",
       "aceternity.com",
       "cacv.vercel.app",
+      "encrypted-tbn0.gstatic.com",
+      "static-00.iconduck.com",
+      "cdn.iconscout.com",
+      "asset.brandfetch.io",
+      "miro.medium.com",
     ], // Add the domain of the images
   },
 };

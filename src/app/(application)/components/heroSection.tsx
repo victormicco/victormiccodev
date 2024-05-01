@@ -14,6 +14,7 @@ import {
   DialogTrigger,
 } from "../../../components/ui/dialog";
 import ContactMe from "./contact";
+import { ListOfStacks } from "./list-of-stacks";
 
 export default function HeroSection() {
   const words = [
@@ -64,42 +65,7 @@ export default function HeroSection() {
             </p>
 
             <div className="mt-32 flex flex-col gap-20 justify-center items-center ">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button className="w-28" variant={"outline"}>
-                    About me
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="w-2/3 flex justify-center ">
-                  {" "}
-                  <DialogHeader>
-                    <DialogTitle>About myself</DialogTitle>
-                    <DialogDescription>
-                      Feel free to know more about me
-                    </DialogDescription>
-                    <div className="text-justify pt-4">
-                      <p className="flex gap-y-1">
-                        My fascination with technology was ignited at a young
-                        age, as I actively participated in an NGO in my
-                        neighborhood since the tender age of 9. The foundation
-                        of my programming skills, including programming logic,
-                        algorithms, and agile methodology, laid the groundwork
-                        for a self-directed learning path. I delved into online
-                        courses, undertook personal projects, and ventured into
-                        freelancing, cultivating a well-rounded skill set. I am
-                        passionate about creating innovative and user-friendly
-                        software solutions that solve real-world problems and
-                        add value to customers. I am always eager to learn new
-                        skills, technologies, and methodologies that can help me
-                        improve my performance and deliver high-quality results.
-                        I thrive in collaborative and diverse environments,
-                        where I can contribute to the team&apos;s success and
-                        grow as a professional.
-                      </p>
-                    </div>
-                  </DialogHeader>
-                </DialogContent>
-              </Dialog>
+              <ListOfStacks />
               <span className="content-center items-center">
                 <ChevronsDown className="h-20 w-20 animate-bounce" />
               </span>

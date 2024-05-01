@@ -36,19 +36,6 @@ export default function Navbar() {
           <Link className="font-medium text-sm leading-none" href="#contact">
             Contact
           </Link>
-          <Button
-            className="font-medium text-sm leading-none"
-            onClick={() => {
-              toast({
-                variant: "default",
-                title: "Chill out🤗",
-                description:
-                  "This is just a portfolio, no need to buy anything...",
-              });
-            }}
-          >
-            Price
-          </Button>
         </nav>
       </nav>
     </motion.div>
