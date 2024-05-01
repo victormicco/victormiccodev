@@ -105,12 +105,12 @@ export const Header = () => {
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
         Some Moments
-        <br /> in my journey
+        <br /> in my Journey!
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        Right here, you can see some of the moments that I've lived in my
+        Right here, you can see some of the moments that I&apos;ve lived in my
         journey! Smiles, tears, and a lot of learning make part of this. I hope
-        you enjoy every single moment that I'm sharing with you!
+        you enjoy every single moment that I&apos;m sharing with you!
       </p>
     </div>
   );
@@ -140,7 +140,7 @@ export const ProductCard = ({
       <div className="block group-hover/product:shadow-2xl ">
         <Image
           src={product.thumbnail}
-          className=" object-left-top absolute h-full w-full inset-0 object-cover object-center"
+          className=" absolute h-full w-full inset-0 object-cover object-center"
           alt={product.title}
         />
       </div>
