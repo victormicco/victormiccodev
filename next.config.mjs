@@ -16,6 +16,8 @@ const nextConfig = {
       "www.lrindustrial.ind.br",
       "logodownload.org",
       "images.unsplash.com",
+      "aceternity.com",
+      "cacv.vercel.app",
     ], // Add the domain of the images
   },
 };

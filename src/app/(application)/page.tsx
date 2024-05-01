@@ -10,6 +10,7 @@ import Projects from "./components/projects";
 import EducationSection from "./components/education";
 
 import ContactMe from "./components/contact";
+import { Gallery } from "./components/gallery";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Projects />
       <EducationSection />
       <ContactMe />
+      <Gallery />
       <Footer />
     </div>
   );
