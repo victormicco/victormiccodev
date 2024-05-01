@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronsDown, Contact } from "lucide-react";
+import { TypewriterEffect } from "../../../components/ui/typewriter-effect";
 import Image from "next/image";
 import {
   Dialog,
@@ -15,6 +16,25 @@ import {
 import ContactMe from "./contact";
 
 export default function HeroSection() {
+  const words = [
+    {
+      text: "Let",
+      className: "text-4xl xl:text-6xl",
+    },
+    {
+      text: "yourself",
+      className: "text-4xl xl:text-6xl",
+    },
+    {
+      text: "know",
+      className: "text-primary dark:text-primary text-4xl xl:text-6xl",
+    },
+    {
+      text: "me",
+      className: "text-primary dark:text-primary text-4xl xl:text-6xl",
+    },
+  ];
+
   return (
     <motion.div
       className="box"
@@ -36,24 +56,12 @@ export default function HeroSection() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-6xl font-bold text-foreground">
-              Let{" "}
-              <span className="underline decoration-wavy decoration-primary decoration-from-font underline-offset-4">
-                yourself
-              </span>{" "}
-              know me👋
+              <TypewriterEffect words={words} />
             </h1>
             <p className="mt-4 text-xl sm:text-3xl text-primary">
               Hello, I&apos;m Victor! A passionate developer with 3+ years of
-              experience in:
+              experience
             </p>
-            <div className="flex justify-center">
-              <ul className="mt-4 text-xl sm:text-3xl text-primary flex flex-row justify-between w-3/3 gap-x-6 ">
-                <li className="text-foreground font-bold">React</li>
-                <li className="text-primary font-bold">Typescript</li>
-                <li className="text-foreground font-bold">NextJS</li>
-                <li className="text-primary font-bold">Tailwind</li>
-              </ul>
-            </div>
 
             <div className="mt-32 flex flex-col gap-20 justify-center items-center ">
               <Dialog>

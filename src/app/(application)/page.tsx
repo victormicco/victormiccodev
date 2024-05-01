@@ -2,8 +2,9 @@
 
 import Navbar from "../../components/navbar";
 import HeroSection from "./components/heroSection";
+
 import Footer from "../../components/footer";
-import Experience from "./components/experience";
+import { Experience } from "./components/experience";
 import Projects from "./components/projects";
 
 import EducationSection from "./components/education";

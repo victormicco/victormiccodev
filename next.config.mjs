@@ -12,6 +12,10 @@ const nextConfig = {
       "senai2024.pro.br",
       "gatewayit.com.br",
       "ibb.co",
+      "dvow0vltefbxy.cloudfront.net",
+      "www.lrindustrial.ind.br",
+      "logodownload.org",
+      "images.unsplash.com",
     ], // Add the domain of the images
   },
 };
