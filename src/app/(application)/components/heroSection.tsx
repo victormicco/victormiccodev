@@ -24,7 +24,8 @@ export default function HeroSection() {
     },
     {
       text: "yourself",
-      className: "text-4xl xl:text-6xl",
+      className:
+        "text-4xl xl:text-6xl decoration-dotted decoration-primary underline",
     },
     {
       text: "know",
@@ -59,9 +60,10 @@ export default function HeroSection() {
             <h1 className="text-4xl sm:text-6xl font-bold text-foreground">
               <TypewriterEffect words={words} />
             </h1>
-            <p className="mt-4 text-xl sm:text-3xl text-primary">
-              Hello, I&apos;m Victor! A passionate developer with 3+ years of
-              experience
+            <p className="mt-4 text-xl sm:text-3xl text-primary font-semibold">
+              Hello, I&apos;m <span className="text-foreground">Victor</span>! A
+              passionate <span className="text-foreground">developer</span> with
+              3+ years of <span className="text-foreground">experience</span>
             </p>
 
             <div className="mt-32 flex flex-col gap-20 justify-center items-center ">
