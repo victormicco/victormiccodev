@@ -4,16 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronsDown, Contact } from "lucide-react";
 import { TypewriterEffect } from "../../../components/ui/typewriter-effect";
-import Image from "next/image";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "../../../components/ui/dialog";
-import ContactMe from "./contact";
+
 import { ListOfStacks } from "./list-of-stacks";
 
 export default function HeroSection() {

@@ -1,4 +1,9 @@
 "use client";
+import killuiconPic from "../../../img/projects-content/killuicon.png";
+import midoryiaPic from "../../../img/projects-content/midoryia.png";
+import cacvPic from "../../../img/projects-content/cacv.png";
+import encontreiPic from "../../../img/projects-content/encontrei.png";
+
 import {
   CardBody,
   CardContainer,
@@ -12,16 +17,14 @@ import {
   CarouselNext,
   Carousel,
 } from "@/components/ui/carousel";
-import { Button } from "../../../components/ui/button";
-import { GitBranch, Github } from "lucide-react";
-import { toast } from "sonner";
+import { Github } from "lucide-react";
 import { useToast } from "../../../components/ui/use-toast";
 
 export default function Projects() {
   const { toast } = useToast();
   return (
     <div className="w-full flex justify-center p-10" id="projects">
-      <div className="max-w-screen-md mx-auto px-4">
+      <div className="max-w-3xl">
         <h1 className="text-4xl font-bold p-4 text-center">Projects</h1>
         <Carousel>
           <CarouselContent className="mx-2 ">
@@ -48,15 +51,11 @@ export default function Projects() {
                       rotateZ={-10}
                       className="w-full mt-4"
                     >
-                      <div className="relative h-60 w-full">
-                        <Image
-                          src="https://i.ibb.co/10c6YKF/Screenshot-2024-04-14-143941.png"
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-xl group-hover/card:shadow-xl"
-                          alt="thumbnail"
-                        />
-                      </div>
+                      <Image
+                        src={midoryiaPic}
+                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        alt="thumbnail"
+                      />
                     </CardItem>
                     <div className="flex justify-between items-center mt-20">
                       <CardItem
@@ -112,15 +111,11 @@ export default function Projects() {
                       rotateZ={-10}
                       className="w-full mt-4"
                     >
-                      <div className="relative h-60 w-full">
-                        <Image
-                          src="https://i.ibb.co/Xj5k31m/killuicon.png"
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-xl group-hover/card:shadow-xl"
-                          alt="thumbnail"
-                        />
-                      </div>
+                      <Image
+                        src={killuiconPic}
+                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        alt="thumbnail"
+                      />
                     </CardItem>
                     <div className="flex justify-between items-center mt-20">
                       <CardItem
@@ -155,7 +150,7 @@ export default function Projects() {
             <CarouselItem className="">
               <div className="m-4">
                 <CardContainer className="inter-var">
-                  <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-cyan-500/[0.8] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                  <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-pink-500/[0.8] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                     <CardItem
                       translateZ="50"
                       className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -175,15 +170,11 @@ export default function Projects() {
                       rotateZ={-10}
                       className="w-full mt-4"
                     >
-                      <div className="relative h-60 w-full">
-                        <Image
-                          src="https://i.ibb.co/bv0dqWC/Screenshot-2024-03-17-172808.png"
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-xl group-hover/card:shadow-xl"
-                          alt="thumbnail"
-                        />
-                      </div>
+                      <Image
+                        src={cacvPic}
+                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        alt="thumbnail"
+                      />
                     </CardItem>
                     <div className="flex justify-between items-center mt-20">
                       <CardItem
@@ -236,15 +227,11 @@ export default function Projects() {
                       rotateZ={-10}
                       className="w-full mt-4"
                     >
-                      <div className="relative h-60 w-full">
-                        <Image
-                          src="https://i.ibb.co/s2zX4yT/Screenshot-2024-03-17-173232.png"
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-xl group-hover/card:shadow-xl"
-                          alt="thumbnail"
-                        />
-                      </div>
+                      <Image
+                        src={encontreiPic}
+                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        alt="thumbnail"
+                      />
                     </CardItem>
                     <div className="flex justify-between items-center mt-20">
                       <CardItem

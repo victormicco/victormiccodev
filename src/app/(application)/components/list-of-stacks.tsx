@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
 import { AnimatedTooltip } from "../../../components/ui/animated-tooltip";
-import ts from "../../../img/ts.png";
-import js from "../../../img/js.png";
-import react from "../../../img/react.png";
-import nextJS from "../../../img/next.png";
-import node from "../../../img/node.png";
-import nest from "../../../img/nest.png";
-import figma from "../../../img/figma.png";
-import tailwind from "../../../img/tailwind.png";
-import electron from "../../../img/electron.png";
+import ts from "../../../img/stack-list/ts.png";
+import js from "../../../img/stack-list/js.png";
+import react from "../../../img/stack-list/react.png";
+import nextJS from "../../../img/stack-list/next.png";
+import node from "../../../img/stack-list/node.png";
+import nest from "../../../img/stack-list/nest.png";
+import figma from "../../../img/stack-list/figma.png";
+import tailwind from "../../../img/stack-list/tailwind.png";
+import electron from "../../../img/stack-list/electron.png";
 
 const stacks = [
   {

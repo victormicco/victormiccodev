@@ -1,112 +1,84 @@
-import unicid from "../../../img/unicid.png";
-import etec from "../../../img/etec.png";
-import senai from "../../../img/senai.png";
-import oracle from "../../../img/oracle.png";
-
+"use client";
+import React from "react";
+import { StickyScroll } from "../../../components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 
-export default function EducationSection() {
+const content = [
+  {
+    title: "Anjun Brasil",
+    position: "Software Developer",
+    date: "Oct 2023 - Present",
+    description:
+      "I was responsible for the whole development of a document emission system for the company, Maintener of the company's design system lib and also responsible for the development of the pages to inspect the products to the GRU International Airport. Using Typescript as the main language, and inside of it, a lot of Libs, Frameworks and tools as Next, React, React Native, Vue, TurboRepo, etc",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <Image
+          src="https://dvow0vltefbxy.cloudfront.net/assets/landing/carriers/anjun-1ff6484db0742b1cf29dbe140d4e9cecb480471291119e63c3ed0bc6c27a790c.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="Anjun Brasil"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Nitro Química",
+    position: "Infrastructure Analyst",
+    date: "Jul 2023 - Oct 2023 · 4 mos",
+    description:
+      "Dedicated to resolving infrastructure issues with an unwavering commitment to finding innovative solutions that prevent the recurrence of the same problems. Constantly exploring new approaches and methodologies to create robust and sustainable fixes, ensuring a proactive approach to infrastructure stability.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="https://www.lrindustrial.ind.br/uploads/clientes/nitroquimica_logotipo_633dc8366601f.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="Nitro quimica"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Metrô de São Paulo",
+    position: "Mechatronics Technician",
+    date: "May 2022 - Jul 2023 · 1 yr 3 mos",
+    description:
+      "Engaged in the acquisition of mechatronics techniques, delving into the realms of mechanics, electronics, and programming. Spearheaded the development of various projects and tests aimed at honing skills and advancing training in the field. Actively pursued extracurricular courses to foster both professional and personal growth, demonstrating a commitment to continuous learning and self-development.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Metr%C3%B4-SP_icon.svg/768px-Metr%C3%B4-SP_icon.svg.png"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="Metro de São Paulo"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "2LT Engenharia",
+    position: "Frontend Developer",
+    date: "Jan 2020 - Jan 2022 · 2 yrs 1 mo",
+    description:
+      "Championed the creation of a website, adhering to best programming practices and scalability standards. Undertook responsibilities encompassing potential maintenance, ensuring the site's longevity and optimal performance. Led the implementation of new features and functions, injecting innovation to enhance user experience and keep the website dynamic and relevant. Managed the design aspects, overseeing the aesthetic and functional aspects of the website to create a cohesive and engaging digital presence.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <h1 className="text-3xl font-bold text-center">2LT Engenharia</h1>
+      </div>
+    ),
+  },
+];
+export function EducationSection() {
   return (
     <>
-      <section className="w-full py-12 " id="education">
-        <div className="container grid items-center gap-8 px-4 text-center md:gap-16 md:px-6">
-          <div>
-            <h3 className="text-lg font-semibold tracking-wider md:text-base sh-3.5">
-              What you think about know a bit about my
-            </h3>
-            <p className="mt-3 text-2xl font-extrabold leading-none md:text-3xl sh-2.5">
-              Education
-            </p>
-            <p className="mt-3 text-gray-500 md:mx-auto md:max-w-3xl md:text-base sh-2.25">
-              Let me show my past education and what I have learned from there.
-            </p>
-          </div>
-          <div className="grid max-w-sm gap-4 mx-auto md:gap-8 lg:max-w-none lg:grid-cols-2 xl:gap-12">
-            <div className="flex items-center gap-4">
-              <Image
-                alt="Service 1"
-                className="rounded-lg"
-                height="120"
-                src={unicid}
-                style={{
-                  aspectRatio: "120/120",
-                  objectFit: "cover",
-                }}
-                width="120"
-              />
-              <div>
-                <h4 className="text-xl font-semibold sh-1.5">
-                  Analysis and Systems Development
-                </h4>
-                <p className="text-sm text-gray-500 sh-2.25">
-                  UNICID | College | 2024 - 2026
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <Image
-                alt="Service 2"
-                className="rounded-lg"
-                height="120"
-                src={etec}
-                style={{
-                  aspectRatio: "120/120",
-                  objectFit: "cover",
-                }}
-                width="120"
-              />
-              <div>
-                <h4 className="text-xl font-semibold sh-1.5">
-                  Software Development
-                </h4>
-                <p className="text-sm text-gray-500 sh-2.25">
-                  ETEC Parque Belém | Technical Course | 2020 - 2023
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <Image
-                alt="Service 3"
-                className="rounded-lg"
-                height="120"
-                src={senai}
-                style={{
-                  aspectRatio: "120/120",
-                  objectFit: "cover",
-                }}
-                width="120"
-              />
-              <div>
-                <h4 className="text-xl font-semibold sh-1.5">Mechatronics</h4>
-                <p className="text-sm text-gray-500 sh-2.25">
-                  SENAI Anchieta | Technical Course | Dropout
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <Image
-                alt="Service 4"
-                className="rounded-lg"
-                height="120"
-                src={oracle}
-                style={{
-                  aspectRatio: "120/120",
-                  objectFit: "cover",
-                }}
-                width="120"
-              />
-              <div>
-                <h4 className="text-xl font-semibold sh-1.5">
-                  Bootcamp Oracle One
-                </h4>
-                <p className="text-sm text-gray-500 sh-2.25">
-                  Oracle - Alura - Ifood | Bootcamp | Present
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="flex justify-center flex-col items-center gap-y-4">
+        <h3 className="text-5xl font-bold">Education🎈</h3>
+
+        <StickyScroll content={content} />
+      </div>
     </>
   );
 }

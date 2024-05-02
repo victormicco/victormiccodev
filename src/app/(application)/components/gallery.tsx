@@ -1,21 +1,21 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "../../../components/ui/hero-parallax";
-import second from "@/img/2.jpg";
-import third from "@/img/3.jpg";
-import four from "@/img/4.jpg";
-import five from "@/img/5.jpg";
-import six from "@/img/6.jpg";
-import seven from "@/img/7.jpg";
-import eight from "@/img/8.jpg";
-import nine from "@/img/9.jpg";
-import ten from "@/img/10.jpg";
-import eleven from "@/img/11.jpg";
-import twelve from "@/img/12.jpg";
-import thirteen from "@/img/13.jpg";
-import fourteen from "@/img/14.jpg";
-import fifteen from "@/img/15.jpg";
-import sixteen from "@/img/16.jpg";
+import second from "@/img/gallery/2.jpg";
+import third from "@/img/gallery/3.jpg";
+import four from "@/img/gallery/4.jpg";
+import five from "@/img/gallery/5.jpg";
+import six from "@/img/gallery/6.jpg";
+import seven from "@/img/gallery/7.jpg";
+import eight from "@/img/gallery/8.jpg";
+import nine from "@/img/gallery/9.jpg";
+import ten from "@/img/gallery/10.jpg";
+import eleven from "@/img/gallery/11.jpg";
+import twelve from "@/img/gallery/12.jpg";
+import thirteen from "@/img/gallery/13.jpg";
+import fourteen from "@/img/gallery/14.jpg";
+import fifteen from "@/img/gallery/15.jpg";
+import sixteen from "@/img/gallery/16.jpg";
 
 export function Gallery() {
   return <HeroParallax products={products} />;

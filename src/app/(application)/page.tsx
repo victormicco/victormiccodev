@@ -7,7 +7,7 @@ import Footer from "../../components/footer";
 import { Experience } from "./components/experience";
 import Projects from "./components/projects";
 
-import EducationSection from "./components/education";
+import { EducationSection } from "./components/education";
 
 import ContactMe from "./components/contact";
 import { Gallery } from "./components/gallery";
@@ -17,10 +17,9 @@ export default function Home() {
     <div className="scroll-smooth">
       <Navbar />
       <HeroSection />
-      
       <Experience />
-      <Projects />
       <EducationSection />
+      <Projects />
       <ContactMe />
       <Gallery />
       <Footer />
