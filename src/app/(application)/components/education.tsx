@@ -1,13 +1,9 @@
-import Link from "next/link";
-import { Button } from "../../../components/ui/button";
-import { Avatar } from "../../../components/ui/avatar";
+import unicid from "../../../img/unicid.png";
+import etec from "../../../img/etec.png";
+import senai from "../../../img/senai.png";
+import oracle from "../../../img/oracle.png";
+
 import Image from "next/image";
-import {
-  Heart,
-  MessageCircleIcon,
-  MoreHorizontalIcon,
-  SendIcon,
-} from "lucide-react";
 
 export default function EducationSection() {
   return (
@@ -31,7 +27,7 @@ export default function EducationSection() {
                 alt="Service 1"
                 className="rounded-lg"
                 height="120"
-                src="https://www.sindcontsp.org.br/vantagens/wp-content/uploads/bfi_thumb/unicid-oevz7ll59b8gxszeilb7byl5040uh019akydsigwfs.png"
+                src={unicid}
                 style={{
                   aspectRatio: "120/120",
                   objectFit: "cover",
@@ -43,7 +39,7 @@ export default function EducationSection() {
                   Analysis and Systems Development
                 </h4>
                 <p className="text-sm text-gray-500 sh-2.25">
-                  UNICID | College | 2024 - 2027
+                  UNICID | College | 2024 - 2026
                 </p>
               </div>
             </div>
@@ -52,7 +48,7 @@ export default function EducationSection() {
                 alt="Service 2"
                 className="rounded-lg"
                 height="120"
-                src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/08/etec-identidade.jpg"
+                src={etec}
                 style={{
                   aspectRatio: "120/120",
                   objectFit: "cover",
@@ -73,7 +69,7 @@ export default function EducationSection() {
                 alt="Service 3"
                 className="rounded-lg"
                 height="120"
-                src="https://senai2024.pro.br/wp-content/uploads/2020/02/senai-sp.jpg"
+                src={senai}
                 style={{
                   aspectRatio: "120/120",
                   objectFit: "cover",
@@ -92,7 +88,7 @@ export default function EducationSection() {
                 alt="Service 4"
                 className="rounded-lg"
                 height="120"
-                src="https://gatewayit.com.br/wp-content/uploads/2022/01/mtitecnologia-computacao-em-nuvem-oracle.png"
+                src={oracle}
                 style={{
                   aspectRatio: "120/120",
                   objectFit: "cover",
