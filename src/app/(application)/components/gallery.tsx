@@ -50,7 +50,7 @@ export const products = [
     thumbnail: eight,
   },
   {
-    title: "My family's bar - 2023 | Coding a new feature for a system",
+    title: "My family bar - 2023 | Coding a new feature for a system",
     thumbnail: nine,
   },
   {
@@ -66,7 +66,7 @@ export const products = [
     thumbnail: twelve,
   },
   {
-    title: "My family's Bar - 2021 | Chillin w my grandma",
+    title: "My family Bar - 2021 | Chillin w my grandma",
     thumbnail: thirteen,
   },
   {

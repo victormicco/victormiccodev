@@ -70,8 +70,8 @@ const dummyContent = [
             Contributed significantly to structured projects, including the
             creation and management of an invoicing software, development of a
             system to monitor external APIs for team awareness, and enhancements
-            to the company's JS front-end library, optimizing code speed and
-            design patterns.
+            to the company&apos;s JS front-end library, optimizing code speed
+            and design patterns.
           </p>
           <br />
         </div>
@@ -166,7 +166,7 @@ const dummyContent = [
           <br />
           <p>
             Undertook responsibilities encompassing potential maintenance,
-            ensuring the site's longevity and optimal performance.
+            ensuring the site&apos;s longevity and optimal performance.
           </p>{" "}
           <br />
           <p>
