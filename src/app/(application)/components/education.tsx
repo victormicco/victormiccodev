@@ -84,7 +84,10 @@ const content = [
 export function EducationSection() {
   return (
     <>
-      <div className="flex justify-center flex-col items-center gap-y-4 mt-20">
+      <div
+        className="flex justify-center flex-col items-center gap-y-4 mt-20"
+        id="education"
+      >
         <h3 className="text-5xl font-bold">Education🎈</h3>
 
         <StickyScroll content={content} />

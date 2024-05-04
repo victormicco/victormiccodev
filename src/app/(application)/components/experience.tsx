@@ -6,7 +6,10 @@ import { TracingBeam } from "../../../components/ui/tracing-beam";
 export function Experience() {
   const [keyOfDiv, setKeyOfDiv] = useState(0);
   return (
-    <div className="flex justify-center flex-col items-center gap-y-2 ">
+    <div
+      className="flex justify-center flex-col items-center gap-y-2 "
+      id="experience"
+    >
       <span className="font-bold text-5xl flex mb-10">
         <h3 className="decoration-wavy decoration-primary underline">
           Experience
