@@ -19,6 +19,7 @@ import {
   CarouselNext,
   Carousel,
 } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 
 interface Project {
   title: string;
@@ -29,11 +30,22 @@ interface Project {
   onClick?: () => void;
 }
 
+// Hook personalizado para detectar se o código está sendo executado no navegador
+function useIsClient() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  return isClient;
+}
+
 export default function Projects() {
   const { toast } = useToast();
 
-  // Verifica se a largura da tela é menor do que 640px (tamanho típico de dispositivos móveis)
-  const isMobile = window.innerWidth < 640;
+  const isClient = useIsClient();
+  const isMobile = isClient && window.innerWidth < 640;
 
   if (isMobile) {
     // Renderiza apenas uma lista simples em dispositivos móveis

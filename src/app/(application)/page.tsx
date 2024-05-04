@@ -14,7 +14,7 @@ import { Gallery } from "./components/gallery";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth ">
       <Navbar />
       <HeroSection />
       <Experience />
