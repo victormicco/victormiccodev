@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
 
+import { useState } from "react";
 import { TracingBeam } from "../../../components/ui/tracing-beam";
 
 export function Experience() {
+  const [keyOfDiv, setKeyOfDiv] = useState(0);
   return (
     <div className="flex justify-center flex-col items-center gap-y-2 ">
       <span className="font-bold text-5xl flex mb-10">
@@ -16,15 +17,20 @@ export function Experience() {
       <TracingBeam className="px-6">
         <div className="max-w-2xl mx-auto antialiased pt-4 relative">
           {dummyContent.map((item, index) => (
-            <div key={`content-${index}`} className="mb-10">
-              <p className="text-3xl mb-4 font-extrabold">{item.title}</p>
+            <div className="mb-10" key={`content-${Math.random()}`}>
+              <p className="text-3xl mb-4 font-extrabold text-primary">
+                {item.title}
+              </p>
               <h2 className="bg-foreground text-background rounded-full text-sm w-fit px-4 py-1 mb-4">
                 {item.badge}
               </h2>
 
               <div className="text-sm  prose prose-sm dark:prose-invert mb-4">
-                {item.stacks.map((stack, index) => (
-                  <span key={`stack-${index}`} className="mr-2  text-xl ">
+                {item.stacks.map((stack) => (
+                  <span
+                    className="mr-2  text-xl "
+                    key={`stack-${Math.random()}`}
+                  >
                     {stack}
                   </span>
                 ))}
@@ -43,7 +49,7 @@ const dummyContent = [
     title: "Anjun Brasil",
     description: (
       <>
-        <p>
+        <div>
           Responsible for lead the development of an innovative MDFE, CTE, and
           NFSE software (front-end), overseeing the entire lifecycle from
           creation to closure.{" "}
@@ -68,7 +74,7 @@ const dummyContent = [
             design patterns.
           </p>
           <br />
-        </p>
+        </div>
       </>
     ),
     badge: "Software Developer | Oct 2023 - Present",
@@ -122,7 +128,7 @@ const dummyContent = [
     title: "Metrô de São Paulo",
     description: (
       <>
-        <p>
+        <div>
           Engaged in the acquisition of mechatronics techniques, delving into
           the realms of mechanics, electronics, and programming. Spearheaded the
           development of various projects and tests aimed at honing skills and
@@ -133,7 +139,7 @@ const dummyContent = [
             and personal growth, demonstrating a commitment to continuous
             learning and self-development.
           </p>
-        </p>
+        </div>
       </>
     ),
     badge: "Mechatronics Technician | May 2022 - Jul 2023 · 1 yr 3 mos",
@@ -154,7 +160,7 @@ const dummyContent = [
     title: "2LT Engenharia",
     description: (
       <>
-        <p>
+        <div>
           Championed the creation of a website, adhering to best programming
           practices and scalability standards. <br />
           <br />
@@ -175,7 +181,7 @@ const dummyContent = [
             aspects of the website to create a cohesive and engaging digital
             presence.
           </p>
-        </p>
+        </div>
       </>
     ),
     badge: "Frontend Developer | Jan 2020 - Jan 2022 · 2 yrs 1 mo",
@@ -188,7 +194,6 @@ const dummyContent = [
       "Figma |",
       "Tailwind |",
       "Bootstrap |",
-      "Jest |",
     ],
   },
 ];

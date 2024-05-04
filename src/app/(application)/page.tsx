@@ -9,7 +9,7 @@ import Projects from "./components/projects";
 
 import { EducationSection } from "./components/education";
 
-import ContactMe from "./components/contact";
+import Contact from "./components/contact";
 import { Gallery } from "./components/gallery";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <Experience />
       <EducationSection />
       <Projects />
-      <ContactMe />
+      <Contact />
       <Gallery />
       <Footer />
     </div>

@@ -7,7 +7,7 @@ import {
   RadioReceiverIcon,
 } from "lucide-react";
 
-export default function ContactMe() {
+export default function Contact() {
   return (
     <div className="w-full flex justify-center " id="contact">
       <Card className=" w-3/3 m-8 lg:w-1/3 md:w-1/3">
