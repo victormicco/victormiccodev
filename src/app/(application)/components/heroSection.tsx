@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ChevronsDown, Contact } from "lucide-react";
+import { ArrowBigDownDash, ChevronsDown, Contact, Mouse } from "lucide-react";
 import { TypewriterEffect } from "../../../components/ui/typewriter-effect";
 import { Application } from "@splinetool/runtime";
 
@@ -93,14 +93,16 @@ export default function HeroSection() {
             <span className="content-center items-center"></span>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 w-full  justify-center items-center pb-8 flex-col mb-16 flex">
+        <div className="absolute bottom-0 left-0 w-full justify-center items-center pb-8 flex-col mb-16 flex h-6/6">
           <canvas
             id="canvas3d"
             className="rounded-3xl hidden lg:flex "
             style={{ opacity: 0.1 }}
           ></canvas>
-          <ChevronsDown className="h-20 w-20 animate-bounce" />
         </div>
+
+        <ArrowBigDownDash className="h-10 w-10 animate-bounce " />
+        <p className="font-semibold text-sm ">Scroll down</p>
       </section>
       <div className="hidden lg:flex xl:flex flex-col justify-center items-center">
         <ListOfStacks />
