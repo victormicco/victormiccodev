@@ -51,10 +51,19 @@ export default function HeroSection() {
             <h1 className="text-4xl sm:text-6xl font-bold text-foreground">
               <TypewriterEffect words={words} />
             </h1>
-            <p className="mt-4 text-xl sm:text-3xl text-primary font-semibold">
-              Hello, I&apos;m <span className="text-foreground">Victor</span>! A
-              passionate <span className="text-foreground">developer</span> with
-              3+ years of <span className="text-foreground">experience</span>
+            <p className="mt-4 text-xl sm:text-3xl text-foreground font-semibold">
+              Hello, I&apos;m{" "}
+              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent ">
+                Victor
+              </span>
+              ! A passionate{" "}
+              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent ">
+                developer
+              </span>{" "}
+              with 3+ years of{" "}
+              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent  ">
+                professional experience
+              </span>
             </p>
 
             <div className="mt-32 flex flex-col gap-20 justify-center items-center ">

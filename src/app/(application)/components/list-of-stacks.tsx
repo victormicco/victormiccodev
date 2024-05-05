@@ -10,6 +10,11 @@ import nest from "../../../img/stack-list/nest.png";
 import figma from "../../../img/stack-list/figma.png";
 import tailwind from "../../../img/stack-list/tailwind.png";
 import electron from "../../../img/stack-list/electron.png";
+import styled from "@/img/stack-list/styled.png";
+import html from "@/img/stack-list/html.png";
+import css from "@/img/stack-list/css.png";
+import git from "@/img/stack-list/git.png";
+import jest from "@/img/stack-list/jest.png";
 
 const stacks = [
   {
@@ -73,6 +78,37 @@ const stacks = [
     designation: "Framework",
     image: electron,
   },
+  {
+    id: 11,
+    name: "Styled Components",
+    designation: "CSS-in-JS library",
+    image: styled,
+  },
+  {
+    id: 12,
+    name: "HTML",
+    designation: "Markup Language",
+    image: html,
+  },
+  {
+    id: 13,
+    name: "CSS",
+    designation: "Style Sheet Language",
+    image: css,
+  },
+  {
+    id: 14,
+    name: "GIT",
+    designation: "Version Control System",
+    image: git,
+  },
+  {
+    id: 15,
+    name: "Jest",
+    designation: "Testing Framework",
+    image: jest,
+  },
+
 ];
 
 export function ListOfStacks() {

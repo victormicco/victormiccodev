@@ -48,6 +48,19 @@
     --ring: 346.8 77.2% 49.8%;
   }
 }
+@keyframes waterAnimation {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+
+.bg-gradient-to-r {
+  background-size: 200% 100%;
+  animation: waterAnimation 2s ease-in-out infinite;
+}
 
 @layer base {
   * {
