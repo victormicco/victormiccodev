@@ -4,10 +4,24 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronsDown, Contact } from "lucide-react";
 import { TypewriterEffect } from "../../../components/ui/typewriter-effect";
+import { Application } from "@splinetool/runtime";
 
 import { ListOfStacks } from "./list-of-stacks";
+import { useEffect, useState } from "react";
 
+function useIsClient() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  return isClient;
+}
 export default function HeroSection() {
+  const isClient = useIsClient();
+  const isMobile = isClient && window.innerWidth < 640;
+
   const words = [
     {
       text: "Let",
@@ -28,6 +42,18 @@ export default function HeroSection() {
     },
   ];
 
+  useEffect(() => {
+    const canvas = document.getElementById("canvas3d") as HTMLCanvasElement;
+    const app = new Application(canvas);
+    app.load("https://prod.spline.design/NSrTLZ9Q3VHNpwFk/scene.splinecode");
+
+    canvas.width = canvas.width * 0.5; // Decrease canvas width by half
+    canvas.height = canvas.height * 0.5; // Decrease canvas height by half
+
+    return () => {
+      // Cleanup if necessary
+    };
+  }, []);
   return (
     <motion.div
       className="box"
@@ -40,41 +66,45 @@ export default function HeroSection() {
       }}
     >
       <section
-        className="relative w-full h-screen flex items-center justify-center bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/placeholder.svg')",
-        }}
+        className="relative w-full h-screen flex flex-col justify-center items-center bg-gradient-to-b from-background to-background-dark"
         id="home"
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center">
+          <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-6xl font-bold text-foreground">
               <TypewriterEffect words={words} />
             </h1>
             <p className="mt-4 text-xl sm:text-3xl text-foreground font-semibold">
               Hello, I&apos;m{" "}
-              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent ">
+              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent">
                 Victor
               </span>
               ! A passionate{" "}
-              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent ">
+              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent">
                 developer
               </span>{" "}
               with 3+ years of{" "}
-              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent  ">
+              <span className="inline-block bg-gradient-to-r from-primary via-pink-800  to-pink-400 bg-clip-text text-transparent">
                 professional experience
               </span>
             </p>
-
-            <div className="mt-32 flex flex-col gap-20 justify-center items-center ">
-              <ListOfStacks />
-              <span className="content-center items-center">
-                <ChevronsDown className="h-20 w-20 animate-bounce" />
-              </span>
-            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center mb-16">
+            <span className="content-center items-center"></span>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 w-full  justify-center items-center pb-8 flex-col mb-16 flex">
+          <canvas
+            id="canvas3d"
+            className="rounded-3xl hidden lg:flex "
+            style={{ opacity: 0.1 }}
+          ></canvas>
+          <ChevronsDown className="h-20 w-20 animate-bounce" />
+        </div>
       </section>
+      <div className="hidden lg:flex xl:flex flex-col justify-center items-center">
+        <ListOfStacks />
+      </div>
     </motion.div>
   );
 }
