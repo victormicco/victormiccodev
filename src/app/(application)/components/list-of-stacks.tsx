@@ -15,6 +15,11 @@ import html from "@/img/stack-list/html.png";
 import css from "@/img/stack-list/css.png";
 import git from "@/img/stack-list/git.png";
 import jest from "@/img/stack-list/jest.png";
+import postgres from "@/img/stack-list/postgres.png";
+import mysql from "@/img/stack-list/mysql.png";
+import prisma from "@/img/stack-list/prisma.png";
+import firebase from "@/img/stack-list/firebase.png";
+import supabase from "@/img/stack-list/supabase.png";
 
 const stacks = [
   {
@@ -108,7 +113,36 @@ const stacks = [
     designation: "Testing Framework",
     image: jest,
   },
-
+  {
+    id: 16,
+    name: "Postgres",
+    designation: "Database Management System",
+    image: postgres,
+  },
+  {
+    id: 17,
+    name: "MySQL",
+    designation: "Database Management System",
+    image: mysql,
+  },
+  {
+    id: 18,
+    name: "Prisma",
+    designation: "Database Management",
+    image: prisma,
+  },
+  {
+    id: 19,
+    name: "Firebase",
+    designation: "Database Management",
+    image: firebase,
+  },
+  {
+    id: 20,
+    name: "Supabase",
+    designation: "Database Management",
+    image: supabase,
+  },
 ];
 
 export function ListOfStacks() {

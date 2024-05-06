@@ -104,7 +104,8 @@ export default function HeroSection() {
         <ArrowBigDownDash className="h-10 w-10 animate-bounce " />
         <p className="font-semibold text-sm ">Scroll down</p>
       </section>
-      <div className="hidden lg:flex xl:flex flex-col justify-center items-center">
+      <div className="hidden lg:flex xl:flex flex-col justify-center items-center gap-y-4 text-3xl font-bold">
+        <p>Have been working with</p>
         <ListOfStacks />
       </div>
     </motion.div>
