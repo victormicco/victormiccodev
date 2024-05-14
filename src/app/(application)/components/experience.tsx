@@ -49,6 +49,40 @@ export function Experience() {
 
 const dummyContent = [
   {
+    title: "Comhub",
+    description: (
+      <>
+        <p>
+          Responsible for create usefuk and scalable fullstack solutions, using
+          best pratices. Overseeing the whole development of external softwares.
+          <br />
+        </p>
+        <p>
+          Collaborated with a dynamic team to architect and develop all
+          softwares from scratch.
+          <br />
+        </p>
+      </>
+    ),
+    badge: "Fullstack Developer | May - Present",
+    stacks: [
+      "| Next |",
+      "React |",
+      "Typescript |",
+      "Shadcn |",
+      "Tailwind |",
+      "Zod |",
+      "Framer Motion |",
+      "React Query |",
+      "React Hook Form |",
+      "NestJS|",
+      "Docker|",
+      "Postgres|",
+      "PrismaORM|",
+      "NodeJS",
+    ],
+  },
+  {
     title: "Anjun Brasil",
     description: (
       <>
@@ -80,7 +114,7 @@ const dummyContent = [
         </div>
       </>
     ),
-    badge: "Software Developer | Oct 2023 - Present",
+    badge: "Software Developer | Oct 2023 - May 2024",
     stacks: [
       "| Next |",
       "React |",
