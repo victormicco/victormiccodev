@@ -74,8 +74,6 @@ const dummyContent = [
       "Fastify",
       "Docker|",
       "Postgres|",
-      "PrismaORM|",
-      "MySQL",
     ],
   },
   {
