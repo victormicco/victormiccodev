@@ -128,8 +128,21 @@ export const DATA = {
       active: true,
       description:
         "Developed a CLI for developers to easily create projects with the latest technologies. Todoroki offers templates for Front-end and Back-end projects, with the ability to customize the project name, description, and technologies.",
-      technologies: ["Typescript", "Commander", "Node.js", "Biome"],
+      technologies: [
+        "Typescript",
+        "Commander",
+        "Node.js",
+        "Biome",
+        "Velite",
+        "Next",
+        "Kanpeki",
+      ],
       links: [
+        {
+          type: "Website",
+          href: "https://todoroki-eight.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
         {
           type: "Source",
           href: "https://github.com/victormicco/todoroki",
