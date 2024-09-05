@@ -63,6 +63,30 @@ export const DATA = {
 
   work: [
     {
+      company: "HP inc.",
+      href: "https://www.hp.com/",
+      badges: [],
+      location: "Worldwide - Indirect Contract",
+      title: "Fullstack Engineer - Indirect Contract",
+      logoUrl: "/hp.png",
+      start: "September 2024",
+      end: "Present",
+      description:
+        "Responsible for developing and maintaining Hp.dev platform delivering new features to others developers and partners. Collaborated with a team of developers to create public Api's and services.",
+    },
+    {
+      company: "Wipro",
+      href: "https://www.wipro.com/",
+      badges: [],
+      location: "Worldwide",
+      title: "Fullstack Engineer",
+      logoUrl: "/wipro.png",
+      start: "September 2024",
+      end: "Present",
+      description:
+        "Responsible for developing and maintaining a variety of software applications, including web applications, APIs, and microservices. Collaborated with a team of developers to create innovative solutions that meet the needs of clients. Utilized a variety of technologies to create high-quality software applications.",
+    },
+    {
       company: "Comhub",
       href: "https://comhub.com.br/",
       badges: [],
@@ -70,7 +94,7 @@ export const DATA = {
       title: "Fullstack Engineer",
       logoUrl: "/comhub.png",
       start: "May 2024",
-      end: "Present",
+      end: "August 2024",
       description:
         "Implemented AI and CRM Integration System: Developed an innovative system integrating artificial intelligence and CRM's to automate client summary creation. This optimizes customer service by allowing agents to proceed with conversations without needing to review entire histories. - News and Utilities Website for Accountants: Engineered a responsive, interactive frontend for a news and utilities website tailored for accountants. Implemented advanced features for recursive upload, navigation, and sharing. ",
     },
