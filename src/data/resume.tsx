@@ -12,7 +12,7 @@ export const DATA = {
     "Software Engineer who loves impact people through lines of code.",
   summary:
     "I started with technology when I was 9, in a NGO in my neighborhood, over there I did my first line of code, and I fell in love with it. So I started to study by myself, and when I was 16 I started to work as a freelancer. ",
-  avatarUrl: "/me.jpeg",
+  avatarUrl: "/me.jpg",
   skills: [
     "React",
     "Next.js",
