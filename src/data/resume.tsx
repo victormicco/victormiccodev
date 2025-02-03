@@ -164,7 +164,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://todoroki-eight.vercel.app/",
+          href: "https://todoroki.victormicco.com.br/",
           icon: <Icons.globe className="size-3" />,
         },
         {
